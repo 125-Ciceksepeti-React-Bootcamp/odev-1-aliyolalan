@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- If you want custom browser colors on mobile -->
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1" />
+
+    <title>Patika Homework</title>
+
+    <!-- Axios CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.map"></script>
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="dist/style.css?cb=1631905893014" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link"
+              ><span class="navbar__link--logo"> Weekly Project </span></a
+            >
+          </li>
+
+          <li class="navbar__item">
+            <input
+              class="navbar__item--input"
+              type="text"
+              placeholder="Search keywords..."
+            />
+          </li>
+
+          <li class="navbar__item" style="display: flex">
+            <img
+              class="navbar__item--image"
+              src="./app/images/profile-pic.png"
+              alt="Profile picture"
+              width="50px"
+            />
+            <span class="navbar__item--name">Ali<br />Yolalan</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Sidebar Links -->
+      <aside class="sidebar">
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="cards.html"
+            ><img src="./app/images/tag.png" />Cards</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="index.html"
+            ><img src="./app/images/monitor.png" />Form</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/avatar.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/envelope.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/placeholder.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/shopping-cart.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/monitor.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/tag.png" />Lorem</a
+          >
+        </div>
+
+        <div class="sidebar__item">
+          <a class="sidebar__item--link" href="#"
+            ><img src="./app/images/pie-chart.png" />Lorem</a
+          >
+        </div>
+      </aside>
+      <!-- /Sidebar Links -->
+
+      <!-- Content -->
+      <section class="content">
+        <div class="content__inner">
+          <form class="form" action="" id="form">
+            <div class="row">
+              <div class="form__field">
+                <label class="form__label" for="fname">Company</label>
+                <input class="form__input" type="text" id="company" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="fname">First Name</label>
+                <input class="form__input" type="text" id="firstName" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form__field">
+                <label class="form__label" for="fname">Last Name</label>
+                <input class="form__input" type="text" id="lastName" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="fname">Email</label>
+                <input class="form__input" type="text" id="email" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form__field">
+                <label class="form__label" for="fname">Title</label>
+                <input class="form__input" type="text" id="title" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="fname">Phone</label>
+                <input class="form__input" type="text" id="phone" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form__field">
+                <label class="form__label" for="fname">Gender</label>
+                <div class="form__field--radio">
+                  <input
+                    class="form__input"
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                  />
+                  <label for="html">Female</label>
+
+                  <input
+                    class="form__input"
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                  />
+                  <label for="html">Male</label>
+
+                  <input
+                    class="form__input"
+                    type="radio"
+                    name="gender"
+                    value="Other"
+                  />
+                  <label for="html">Other</label>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="fname">Date</label>
+                <input class="form__input" type="date" id="date" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form__field">
+                <label class="form__label" for="fname">Message</label>
+                <textarea
+                  class="form__textarea"
+                  name=""
+                  id="textarea"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <input
+                class="form__submit"
+                id="submitBtn"
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- /Content -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">
+        Developed by
+        <a href="https://github.com/aliyolalan" target="_blank">Ali Yolalan</a>
+        with &#10084;&#65039;
+      </p>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <section class="modal" id="modal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="modal__content--close" id="closeBtn">&times;</span>
+          <h2 class="modal__header--title">Form Informations...</h2>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Company:</p>
+          <p class="modal__body--text" id="modalCompany"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">First Name:</p>
+          <p class="modal__body--text" id="modalFirstName"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Last Name:</p>
+          <p class="modal__body--text" id="modalLastName"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Email:</p>
+          <p class="modal__body--text" id="modalEmail"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Title:</p>
+          <p class="modal__body--text" id="modalTitle"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Phone:</p>
+          <p class="modal__body--text" id="modalPhone"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Gender:</p>
+          <p class="modal__body--text" id="modalGender"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Date:</p>
+          <p class="modal__body--text" id="modalDate"></p>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__body--text">Message:</p>
+          <p class="modal__body--text" id="modalMessage"></p>
+        </div>
+      </div>
+    </section>
+    <!-- /Modal -->
+
+    <!-- JavaScript File -->
+    <script src="dist/all.js?cb=1631905893014"></script>
+  </body>
+</html>
